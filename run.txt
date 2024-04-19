@@ -1,0 +1,7 @@
+angular
+npm run serve:single-spa:angular-spa
+react
+npm run start:standalone
+root
+npm start
+

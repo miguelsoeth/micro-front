@@ -1,18 +1,21 @@
 <single-spa-router>
-  <div class="base">
-    <nav>
-      <application class="react-nav" name="@react-app/react-project"></application>
-    </nav>
-    <route path="angular">
-      <application name="@angular-app/angular-project"></application>
+  <nav>
+    <application name="@angular-nav/angular"></application>
+  </nav>
+  <main>
+    <route default>
+      <div class="home-card">
+        <application name="@angular-home-card/angular-home-org"></application>
+      </div>
     </route>
-
-    <route path="lorem">
-      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ullam inventore error, temporibus omnis, perferendis voluptas totam dicta vero quo soluta. Hic veritatis sint ipsam numquam eligendi earum. Accusantium, id.</div>
+    <route path="consultar">
+      <div class=>
+        <application name="@angular-consultar/angular-consultar-org"></application>
+        <application name="@angular-resultado/angular-resultado-org"></application>
+      </div>
     </route>
-  </div>  
+  </main>  
 </single-spa-router>
-
 
 
   <!--

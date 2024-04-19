@@ -1,0 +1,14 @@
+<form class="infos-consulta" [formGroup]="myForm" (ngSubmit)="search()">
+  <mat-form-field class="input-consulta">
+    <mat-label>Documento</mat-label>
+    <input formControlName="docField" matInput cpfCnpjMask maxlength="17" placeholder="CPF/CNPJ">
+  </mat-form-field>
+  <mat-form-field class="input-consulta">
+    <mat-label>Pesquisa por:</mat-label>
+    <mat-select formControlName="typeField">
+      <mat-option value="cpf">CNPJ</mat-option>
+      <mat-option value="cnpj">CPF</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button class="button-consulta" mat-flat-button color="primary" type="submit">Consultar</button>
+</form>

@@ -1,0 +1,13 @@
+.infos-consulta {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.button-consulta {
+    height: 55px;
+}
+
+.input-consulta {
+    width: 40%;
+}
